@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # My new app
-    'universities.apps.UniversitiesConfig'
+    'universities.apps.UniversitiesConfig',
 ]
 
 MIDDLEWARE = [
