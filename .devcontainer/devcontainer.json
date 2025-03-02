@@ -1,0 +1,16 @@
+{
+    "name": "Django Dev Environment",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "features": {
+      "python": "latest"
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
+      }
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "codespace"
+  }
