@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
+def home(request):
     context = {"message": "Cam greu sa programezi :("}
-    return render(request, "universities/index.html", context)
+    return render(request, "universities/meniu.html", context)
