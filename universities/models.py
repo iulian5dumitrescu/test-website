@@ -13,3 +13,25 @@ class Facultate(models.Model):
         verbose_name_plural = "facultati"
     
 
+class Intrebare(models.Model):
+    text = models.TextField()
+
+    def __str__(self): # cand se apeleaza .self ne arata textul
+        return self.text
+    
+    class Meta:
+        verbose_name_plural = "intrebari"
+
+
+class Raspuns(models.Model):
+    intrebare = models.ForeignKey(Intrebare, on_delete = models.CASCADE)
+    text = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.text
+    
+    class Meta:
+        verbose_name_plural = "raspunsuri"
+
+
+
